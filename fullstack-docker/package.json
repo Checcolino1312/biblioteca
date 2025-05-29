@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "chatbot-widget": "file:../../chatbot_biblioteca/chatbot-widget"
+  }
+}
