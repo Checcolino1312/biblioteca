@@ -8,7 +8,7 @@ import 'chatbot-widget/dist/Chatbot.css';
 
 function App() {
   return (
-    <div style={{ padding: "2rem" }}>
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,5 +20,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

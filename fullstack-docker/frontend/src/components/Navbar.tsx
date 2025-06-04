@@ -1,12 +1,27 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar: React.FC = () => (
   <nav className="navbar">
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/libri-in-giro">Libri in giro</Link></li>
-      <li><Link to="/registra-prestito">Registra un prestito</Link></li>
+    <NavLink to="/" end className="navbar-brand">
+      📚 Biblioteca
+    </NavLink>
+    <ul className="navbar-links">
+      <li>
+        <NavLink to="/" end>
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/libri-in-giro">
+          Libri in giro
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/registra-prestito">
+          Registra un prestito
+        </NavLink>
+      </li>
     </ul>
   </nav>
 );
